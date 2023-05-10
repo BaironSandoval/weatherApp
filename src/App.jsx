@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getCoordinates } from "./Services/getCoordinates";
+import { getCoordinates } from "./services/getCoordinates";
 
 import "./App.css";
 import { getCurrentWeather } from "./services/getCurrentWeather";
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="container_app">
       <div className="container_title">
-      <h1 className="titule">Weather App</h1>
+        <h1 className="titule">Weather App</h1>
       </div>
       {weather ? (
         <div className="weather_container">
