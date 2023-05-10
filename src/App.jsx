@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getCoordinates } from "./Services/getCoordinates";
 
 import "./App.css";
-import { getCurrentWeather } from "./Services/getCurrentWeather";
+import { getCurrentWeather } from "./services/getCurrentWeather";
 import DataContainer from "./Components/DataContainer/DataContainer";
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
           </div>
         </div>
       ) : (
-        <p>Loading weather ... </p>
+        <p className="loading">Loading weather ... </p>
       )}
     </div>
   );
